@@ -1,0 +1,59 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Global ===== */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  overflow-x: hidden; /* ✅ Extra safety */
+}
+
+/* ===== Scrollbar Custom Style ===== */
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* white background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* gray thumb */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Yeh arrows / buttons hatane ke liye */
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+
+@font-face {
+  font-family: "Calibri";
+  src: url("/fonts/Calibri.woff2") format("woff2"),
+       url("/fonts/Calibri.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Calibri", sans-serif;
+}

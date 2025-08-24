@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="830px" height="830px" viewBox="0 0 830 830" enable-background="new 0 0 830 830" xml:space="preserve">
+<filter  width="140%" height="130%" id="AI_Shadow_2" filterUnits="objectBoundingBox" x="-15%" y="-15%">
+	<feGaussianBlur  in="SourceAlpha" result="blur" stdDeviation="6"></feGaussianBlur>
+	<feOffset  in="blur" result="offsetBlurredAlpha" dx="8" dy="8"></feOffset>
+	<feMerge>
+		<feMergeNode  in="offsetBlurredAlpha"></feMergeNode>
+		<feMergeNode  in="SourceGraphic"></feMergeNode>
+	</feMerge>
+</filter>
+<circle fill="#231F20" stroke="#ED1C24" stroke-width="30" stroke-miterlimit="10" cx="415" cy="415" r="400"/>
+<g filter="url(#AI_Shadow_2)">
+	<path fill="none" stroke="#ED1C24" stroke-width="36.3086" stroke-miterlimit="10" d="M378.61,128.93l-30.287,171.768
+		c-0.867,4.917,2.509,8.939,7.501,8.939h144.342c4.992,0,9.786-4.023,10.653-8.939l30.287-171.768"/>
+</g>
+<g filter="url(#AI_Shadow_2)">
+	<path fill="none" stroke="#ED1C24" stroke-width="36.3086" stroke-miterlimit="10" d="M115,496.613h171.631
+		c4.992,0,9.786-4.023,10.653-8.939l25.5-144.618c0.867-4.917-2.508-8.939-7.501-8.939H143.653"/>
+</g>
+<g filter="url(#AI_Shadow_2)">
+	<path fill="none" stroke="#ED1C24" stroke-width="36.3086" stroke-miterlimit="10" d="M451.483,701.07l30.287-171.768
+		c0.867-4.917-2.509-8.939-7.501-8.939H329.927c-4.992,0-9.786,4.023-10.653,8.939L288.986,701.07"/>
+</g>
+<g filter="url(#AI_Shadow_2)">
+	<path fill="none" stroke="#ED1C24" stroke-width="36.3086" stroke-miterlimit="10" d="M715,333.572H543.37
+		c-4.992,0-9.786,4.023-10.653,8.939l-25.5,144.618c-0.867,4.917,2.508,8.939,7.501,8.939h171.63"/>
+</g>
+</svg>

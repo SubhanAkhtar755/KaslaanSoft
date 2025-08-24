@@ -1,0 +1,288 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #E1E1E1;   /* React wali color */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);  /* Shadow like Tailwind shadow-md */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  height: 80px;
+}
+
+/* Left (Logo) */
+.navbar-left img {
+  height: 66px;
+  cursor: pointer;
+}
+
+/* Center Left - Dropdown */
+.navbar-center-left {
+  position: relative;
+}
+
+.menu-btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-btn:hover {
+  border-bottom: 2px solid #000;
+
+}
+
+.menu-btn .arrow1 {
+  width: 14px;
+  margin-left: 8px;
+  position: relative;
+  top: -1px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 220px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.dropdown li {
+  list-style: none;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px 15px;
+  color: #000;
+  text-decoration: none;
+  transition: background 0.2s ease-in-out;
+}
+
+.dropdown a:hover {
+  background: #e5e5e5;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Center Right - Links */
+.navbar-center-right .nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid #000;
+
+}
+
+/* Right - Cart */
+.navbar-right .cart-icon {
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-right .cart-icon:hover {
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 15px;
+  }
+
+  .navbar-center-right .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links span.desktop {
+    display: none;
+  }
+
+  .nav-links i.mobile {
+    display: inline-block;
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-links i.mobile {
+    display: none;
+  }
+}
+/* Default: Badi screen pe full logo */
+#logo {
+  content: url("Images/ks_logo_full.png");
+  height: 66px;
+}
+
+/* Chhoti screen pe small logo */
+@media (max-width: 640px) {
+  #logo {
+    content: url("Images/ks_logo.png");
+    height: 60px;
+  }
+}
+
+
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #E1E1E1;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;     /* dropdown ke neeche na chhupay */
+  height: 80px;
+  overflow: visible; /* 👈 yahan change */
+}
+
+/* ===== Dropdown ===== */
+.dropdown {
+  position: absolute;
+  top: 100%;  /* 👈 ab wo button ke neeche open hoga */
+  left: 0;
+  width: 220px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 200;  /* 👈 navbar ke upar */
+}
+
+
+.navbar-left img {
+  height: 60px;
+  cursor: pointer;
+  max-width: 100%;
+}
+
+/* ===== Dropdown ===== */
+.navbar-center-left {
+  position: relative;
+}
+.menu-btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.menu-btn .arrow1 {
+  width: 14px;
+  margin-left: 6px;
+}
+
+.dropdown li {
+  list-style: none;
+}
+.dropdown a {
+  display: block;
+  padding: 10px 15px;
+  color: #000;
+  text-decoration: none;
+}
+.dropdown a:hover {
+  background: #e5e5e5;
+}
+.hidden {
+  display: none;
+}
+
+/* ===== Links ===== */
+.navbar-center-right .nav-links {
+  display: flex;
+  gap: 20px;
+  font-weight: 200;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav-links a:hover {
+  border-bottom: 2px solid #000;
+}
+
+/* ===== Cart ===== */
+.navbar-right .cart-icon {
+  cursor: pointer;
+}
+.navbar-right .cart-icon:hover {
+  color: #444;
+}
+
+/* ===== Logo Responsive ===== */
+#logo {
+  content: url("../Images/ks_logo_full.png");
+  height: 60px;
+}
+@media (max-width: 640px) {
+  #logo {
+    content: url("../Images/ks_logo.png");
+    height: 55px;
+  }
+}
+
+/* ===== Responsive Navbar ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 10px;
+    height: auto;
+  }
+  .navbar-center-right .nav-links {
+    gap: 12px;
+    flex-wrap: wrap;   /* ✅ links wrap karenge */
+    justify-content: center;
+  }
+  .nav-links span.desktop {
+    display: none;
+  }
+  .nav-links i.mobile {
+    display: inline-block;
+  }
+}
+@media (min-width: 769px) {
+  .nav-links i.mobile {
+    display: none;
+  }
+}
+
+
+
+

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon (logo in tab) -->
+  <link rel="icon" type="image/png" href="./Images/favicon.png">
+
+  <title>KaslaanSoft-Make Your Office</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/Navbar.css">
+  <link rel="stylesheet" href="./CSS/About.css">
+  <link rel="stylesheet" href="./CSS/AppSlide.css">
+  <link rel="stylesheet" href="./CSS/Contract.css">
+  <link rel="stylesheet" href="./CSS/Contact.css">
+  <link rel="stylesheet" href="./CSS/Footer.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <!-- Left -->
+    <div class="navbar-left">
+      <img id="logo" src="Images/ks_logo_full.png" alt="kaslaan logo">
+    </div>
+
+    <!-- Center Left -->
+    <div class="navbar-center-left" id="menuRef">
+      <button id="menu-toggle" class="menu-btn">
+        <span>Products</span>
+        <img src="./Images/down_arrow.svg" alt="arrow" class="arrow1">
+      </button>
+      <ul id="dropdown" class="dropdown hidden">
+        <li><a href="#kaslaan-macros">Kaslaan Macros</a></li>
+        <li><a href="#kaslaan-doc">Kaslaan DocConvert</a></li>
+        <li><a href="#kaslaan-media">Kaslaan MediaConverter</a></li>
+        <li><a href="#kaslaan-bmi">Kaslaan BMI</a></li>
+        <li><a href="#kaslaan-inspect">Kaslaan SizeInspect</a></li>
+        <li><a href="#kaslaan-calc">Kaslaan Calculator</a></li>
+        <li><a href="#kaslaan-hasher">Kaslaan Hasher</a></li>
+      </ul>
+    </div>
+
+    <!-- Center Right -->
+    <div class="navbar-center-right">
+      <ul class="nav-links">
+        <li>
+          <a href="#license-terms">
+            <span class="desktop">License Terms</span>
+            <i class="bi bi-vector-pen mobile"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#privacy-policy">
+            <span class="desktop">Privacy Policy</span>
+            <i class="bi bi-shield-check mobile"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#contact">
+            <span class="desktop">Contact</span>
+            <i class="bi bi-envelope mobile"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right -->
+    <div class="navbar-right">
+      <i class="bi bi-cart2 cart-icon"></i>
+    </div>
+  </header>
+
+  <section class="about-section">
+    <div class="container">
+      <h2>KaslaanSoft - Make your office or studio desk easy!</h2>
+      <p>
+        At KaslaanSoft, we understand the importance of maximizing efficiency when using your computer.
+        We all aim to optimize our workspaces, saving time and energy in the process. That's why I, Ishaq,
+        have dedicated extra thought to developing innovative applications designed to enhance your daily tasks like
+        never before.
+      </p>
+      <p>
+        Each application is crafted with a focus on functionality, efficiency, and intuitive design, offering a powerful
+        solution to improve your workflow.
+        Explore the unique tools available at KaslaanSoft, try them for free, and if they bring value to your routine,
+        feel free to make them a permanent part of your toolkit.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- App Slide Section -->
+  <section class="app-slide">
+    <div id="appsContainer"></div>
+  </section>
+
+  <!-- Contract Section -->
+  <section id="contract" class="contract-section">
+    <div class="contract-container">
+
+      <!-- Contract Box 1 -->
+      <div class="contract-box" id="license-terms">
+        <div class="contract-header">
+          <i class="bi bi-vector-pen"></i>
+          <p>License Terms</p>
+        </div>
+        <div class="contract-body">
+          <div class="contract-content">
+            <p class="text-right">Date updated: 14 Jul 2023</p>
+            <br>
+            <p>
+              "Software" refers to any software developed by KaslaanSoft, and whether it is full or trial version.
+              "User" or "You" refers to the person who is using the software, who is either owner of the software or
+              using it in shared or someone else computer. "Developer" refers to KaslaanSoft software brand.
+            </p>
+            <br>
+            <p>
+              If you are legally a child, then you acknowledge that your parent or legal guardian takes responsibility
+              of
+              your usage of any products developed by KaslaanSoft. And all the license terms bind to him or her.
+            </p>
+            <br>
+            <p>
+              You are granted to use any software developed by KaslaanSoft for any purpose, whether its in business,
+              education, office domain or any other place of usage. Usage permission is granted to every user of the
+              computer in which the software in installed or present. Any output data, or outcome, you derive by any
+              software can be used anywhere; but if encountered any harm, problem, loss etc, developer of the software
+              shall not be held responsible.
+            </p>
+            <br>
+            <p>
+              Software as a whole or a part of shall not be distributed in any way and for any purpose. People should
+              only be given the address where you bought or downloaded the software. Advertising the software is
+              permitted
+              on the condition that anything spoken about it is not false. Advertising is permitted for any purpose,
+              whether its for user's itself benefit (in any way) or its for developer's benefit; as long as software is
+              not
+              copied to someone else computer in the process.
+            </p>
+            <br>
+            <p>
+              No software will use internet network for any type of requirement without notifying user. Developer will
+              never receive usage or any other information in any way, unless user wants to verify their software
+              installation to receive future versions of software, when available, free of cost.
+            </p>
+            <br>
+            <p>
+              Software Install ID acquired from any full version software should not be shared with anyone, whether it
+              is
+              an individual or a party. And no reason or cause would be accepted. Software Install ID once sent to
+              verify@kaslaansoft.com, is stored in a database, by the Developer, along with the email address, from
+              which
+              it is received. It will store Software name as well, from which Software Install ID is acquired. Future
+              versions of the software will be delivered to that email address for free, once available or released.
+              User
+              can request the Developer to delete permanently the record stored for him. Software Install ID may serve
+              no
+              purpose, if the software is purchased from Microsoft Store, since they upgrade the software by itself or
+              prompts the user, directly, without any need of Software Install ID. But there is a possibility that any
+              new
+              version of the software could be removed from Microsoft App Store.
+            </p>
+            <br>
+            <p>
+              Full version software can be used for unlimited time without any expiry date. And without any other
+              restrictions found in trial versions.
+            </p>
+            <br>
+            <h2 class="sub-heading">Refund</h2>
+            <br>
+            <p>
+              As for refund policy, if software is purchased at any third-party stores, such as Microsoft Store; their
+              own
+              refund policies will be applied in your case. You cannot request then any refunds from the Developer.
+            </p>
+            <br>
+            <p>
+              Users are advised to download and evaluate trial version of the software, before purchasing. Trial version
+              is
+              availed at no cost. And may contain one more features restriction. And may run only for a definite time or
+              a
+              definite number of times.
+            </p>
+            <br>
+            <p>
+              If purchased software fails to perform a certain feature, described in software description, user could
+              easily request refund by contacting the Developer. User could also request refund, if he experiences any
+              flaws, errors, glitches, etc. We will issue 100% refund of the user spend amount, provided following
+              criteria
+              are met:
+            </p>
+            <br>
+            <ul>
+              <li>User used trial version prior to purchasing the full version. But any complain he grounds for refund,
+                was not present in trial version.</li>
+              <li>User has a clear description of what went wrong. We may ask for any further details and or input files
+                to
+                replicate the same issue on our end, to verify.</li>
+            </ul>
+            <br>
+            <p>
+              Above mentioned terms may subject to change with or without prior or after notification.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contract Box 2 -->
+      <div class="contract-box" id="privacy-policy">
+        <div class="contract-header">
+          <i class="bi bi-shield-check"></i>
+          <p>Privacy Policy</p>
+        </div>
+        <div class="contract-body">
+          <div class="contract-content">
+            <p>
+              KaslaanSoft (or KaslaanSoft.com, referred as "Developer") is in legal binding to the below Privacy Policy.
+              This Privacy Policy is formulated to declare clearly all the possible places where you may enter data,
+              whether it is personal, non-personal, or data created when using Developer's website or any software
+              published by it. And that how it is used, analyzed, or kept.
+            </p>
+            <br>
+            <h2 class="sub-heading">KaslaanSoft.com</h2>
+            <br>
+            <p>
+              This section describes subject declarations specific to using KaslaanSoft website.
+            </p>
+            <br>
+            <p>
+              This website lists all the software developed and published by KaslaanSoft.com. This website does not host
+              any setups. Direct links are provided to the associated Microsoft App Store page links, where the software
+              may be bought, or evaluated, depending on whether it is paid or trial version respectively; or install
+              free
+              if it is freeware.
+            </p>
+            <br>
+            <p>
+              Developer does not collect any visitor's data, in any way, and for any purpose. But it may be cached,
+              used,
+              analyzed, or stored in any way, by the web browser, visitor is using. Developer has no connection with it.
+              Same applies to when following external links.
+            </p>
+            <br>
+            <h2 class="sub-heading">KaslaanSoft.com Products</h2>
+            <br>
+            <p>
+              This section describes subject declarations specific to using KaslaanSoft Products.
+            </p>
+            <br>
+            <p>
+              Developer does not collect, store, or analyze any user data, whether it is personal, non-personal, or data
+              created when using any product published by the Developer. Neither we transfer it to third party. All the
+              software are designed to work fully offline. And have zero dependency on internet connection. But when
+              providing Software Install Id, (which is used to verify specific product installation, for getting new
+              versions of any paid product, for free, when available) through email, Developer will store sent Software
+              Install Id with sender email address. User can request to delete it, but sending new versions of the
+              product
+              will become impossible, for which user has provided Software Install Id.
+            </p>
+            <br>
+            <p>
+              Above mentioned terms may subject to change with or without prior or after notification.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="contract-footer">
+      <label>
+        <input type="checkbox"> I confirm, I have read and agreed to above specified License Terms and Privacy Policy
+      </label>
+    </div>
+  </section>
+
+ 
+  <!-- Contact Section -->
+<section class="contact-section" id="contact">
+  <img src="Images/contact_bg.svg" alt="contact-bg" class="contact-bg">
+
+  <h1 class="contact-title">
+    <i class="bi bi-envelope"></i> Contact
+  </h1>
+
+  <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" id="contact-form" class="contact-container" enctype="multipart/form-data">
+    
+    <!-- Hidden input for Netlify bot detection -->
+    <input type="hidden" name="form-name" value="contact">
+    
+    <!-- Left Column -->
+    <div class="contact-col">
+      <h2 class="contact-heading">Details</h2>
+      <div class="contact-fields">
+        <div class="input-group">
+          <label>Name:</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div class="input-group">
+          <label>Email:</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="input-group select-group">
+          <label>Subject:</label>
+          <select name="subject" id="subject">
+            <option>Feedback</option>
+            <option>Suggestion</option>
+          </select>
+        </div>
+      </div>
+
+      <h2 class="contact-heading">Attachment</h2>
+      <div class="input-group">
+        <label>File:</label>
+        <input type="text" id="file-name" placeholder="No file selected" readonly />
+      </div>
+      <div class="file-btn">
+        <input type="file" name="file" id="file-input" hidden />
+        <label for="file-input" id="file-btn">Select File</label>
+      </div>
+    </div>
+
+    <!-- Middle Column -->
+    <div class="contact-col">
+      <h2 class="contact-heading">Message</h2>
+      <textarea name="message" id="message" placeholder="Type your message here..." required></textarea>
+    </div>
+
+    <!-- Right Column -->
+    <div class="contact-col">
+      <h2 class="contact-heading">Send</h2>
+      <div class="recaptcha-box">
+        <div class="g-recaptcha" data-sitekey="6LfHAG4mAAAAADD3zSWnLJG0yD70gIPCxW-LgJ8j"></div>
+      </div>
+      <button type="submit" id="submit-btn" disabled>Submit</button>
+    </div>
+
+  </form>
+</section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-address">
+        <p>Address:</p>
+        <p>
+          House 5, Street 1, Sadiq Akbar Colony, Landay Sarak,<br />
+          Charsadda Rd, Peshawar, KPK, Pakistan
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <p>Useful links:</p>
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
+              Kaslaan YouTube Channel ↗
+            </a>
+          </li>
+          <li>
+            <a href="https://your-website.com" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" alt="Website" />
+              Developer's website ↗
+            </a>
+          </li>
+          <li>
+            <a href="https://apps.microsoft.com/store" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="Microsoft Store" />
+              KaslaanSoft at Microsoft Store ↗
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2020-2025 KaslaanSoft All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- appslide first Section All data in Json form -->
+
+  <script>
+    // JSON data
+    const appsData = [
+      {
+        "name": "kaslaan-macros",
+        "title": "Kaslaan Macros",
+        "logo": "./Images/ks-macros/ks_macros_logo.svg",
+        "imgs": [
+          "./Images/ks-macros/ks_macros_1.png",
+          "./Images/ks-macros/ks_macros_2.png",
+          "./Images/ks-macros/ks_macros_3.png",
+          "./Images/ks-macros/ks_macros_4.png",
+          "./Images/ks-macros/ks_macros_5.png",
+          "./Images/ks-macros/ks_macros_6.png"
+        ],
+        "desc": "Automate your keyboard and mouse in a flexible way. Also have additional commands related to filesystem, system power, webpage access, etc. Custom macros are created, which are populated by adding commands selected from a list of categories; or user can record his or her steps with dedicated Records Steps button. User design a macro to automate his certain task he do with his hands.",
+        "bgColor": "#FDE8DE",
+        "lineColor": "#F26522",
+        "price": "$9.99",
+        "direction": "left"
+      },
+      {
+        "name": "kaslaan-doc",
+        "title": "Kaslaan DocConvert",
+        "logo": "./Images/ks-doc/ks_doc_logo.svg",
+        "imgs": [
+          "./Images/ks-doc/ks_doc_1.png",
+          "./Images/ks-doc/ks_doc_2.png",
+          "./Images/ks-doc/ks_doc_3.png",
+          "./Images/ks-doc/ks_doc_4.png",
+          "./Images/ks-doc/ks_doc_5.png"
+        ],
+        "desc": "Want to convert a folder of DOCX files to PDF files, with a single click, without even any need of Microsoft Word? Or want to convert all spreadsheets in every Microsoft Excel file, in a folder, with a single click, without even any need of Microsoft Excel? Or want to watermark all PDFs files in a folder with a single click? I know, it does not ends here. Try Kaslaan DocConvert, which uses multi-threaded approach to deliver extra faster processing speeds, designed to be all-in-one batch document converting and processing utility. That could sit in your office or home computer, and make your life a bit easier.",
+        "bgColor": "#D9F7EF",
+        "lineColor": "#00CA94",
+        "price": "$9.99",
+        "direction": "right"
+      },
+      {
+        "name": "kaslaan-media",
+        "title": "Kaslaan MediaConverter",
+        "logo": "./Images/ks-media/ks_media_logo.svg",
+        "imgs": [
+          "./Images/ks-media/ks_media_1.png",
+          "./Images/ks-media/ks_media_2.png",
+          "./Images/ks-media/ks_media_3.png",
+          "./Images/ks-media/ks_media_4.png"
+        ],
+        "desc": "Multi-threaded, all in one media file type converter and processor. It supports several file types of image, video, and audio; and supports conversion in between. Most of conversions offer several settings. It will automatically detect what files could be converted/processed in user selected folder, and will list options accordingly. It is important that files already exist in source folder, before specifying; otherwise Reload button should be pressed. Hitting start button will start the process, and it will use multi-threaded approach to deliver extra fast processing speeds - it processes multiple files in parallel.",
+        "bgColor": "#FDE7F1",
+        "lineColor": "#EF5EA1",
+        "price": "$9.99",
+        "direction": "left"
+      },
+      {
+        "name": "kaslaan-bmi",
+        "title": "Kaslaan BMI",
+        "logo": "./Images/ks-bmi/ks_bmi_logo.svg",
+        "imgs": [
+          "./Images/ks-bmi/ks_bmi_1.png",
+          "./Images/ks-bmi/ks_bmi_2.png",
+          "./Images/ks-bmi/ks_bmi_3.png"
+        ],
+        "desc": "Ground-up rebuild of original Kaslaan BMI. Bringing you more features and more reliable user experience. Can now find BMI category of non-adults, male and female, of age 2 to 20 years, using Percentile graphs, published by CDC (cdc.gov). Now can track BMI in better way and for multiple users.",
+        "bgColor": "#FEF3E4",
+        "lineColor": "#FBB04C",
+        "price": "$9.99",
+        "direction": "right"
+      },
+      {
+        "name": "kaslaan-inspect",
+        "title": "Kaslaan SizeInspect",
+        "logo": "./Images/ks-inspect/ks_inspect_logo.svg",
+        "imgs": [
+          "./Images/ks-inspect/ks_inspect_1.png",
+          "./Images/ks-inspect/ks_inspect_2.png",
+          "./Images/ks-inspect/ks_inspect_3.png"
+        ],
+        "desc": "Generate comprehensive report of disk usage of a folder content. Get knowledge of what files are affecting disk usage the most. User selected folder is analyzed including all subfolders, and report is generated. Report can be configured by a number of options, prior to running the process. Individual report column can be hide or shown by the user. Each item in the report can be double-clicked to open. On right-clicking, brings a menu with few useful options. Generated report can be exported to local drive. Report results can also be sorted in Ascending and Descending order (based on Portion column).",
+        "bgColor": "#FAE6FF",
+        "lineColor": "#C700FF",
+        "price": "$9.99",
+        "direction": "left"
+      },
+      {
+        "name": "kaslaan-calc",
+        "title": "Kaslaan Calculator",
+        "logo": "./Images/ks-calc/ks_calc_logo.svg",
+        "imgs": [
+          "./Images/ks-calc/ks_calc_1.png",
+          "./Images/ks-calc/ks_calc_2.png",
+          "./Images/ks-calc/ks_calc_3.png",
+          "./Images/ks-calc/ks_calc_4.png",
+          "./Images/ks-calc/ks_calc_5.png",
+          "./Images/ks-calc/ks_calc_6.png"
+        ],
+        "desc": "This is an advanced modern general purpose calculator with also some minimal scientific calculations support, intended to be used at any place whether it is at home, school, office or at any other place. This is not a single calculator but can be called as a (or an important) set of calculators because it consist of many calculators. A portable solution for daily life numerical tasks/problems.",
+        "bgColor": "#D9F3FD",
+        "lineColor": "#00AEEF",
+        "price": "$9.99",
+        "direction": "right"
+      },
+      {
+        "name": "kaslaan-hasher",
+        "title": "Kaslaan Hasher",
+        "logo": "./Images/ks-hasher/ks_hasher_logo.svg",
+        "imgs": [
+          "./Images/ks-hasher/ks_hasher_1.png",
+          "./Images/ks-hasher/ks_hasher_2.png",
+          "./Images/ks-hasher/ks_hasher_3.png",
+          "./Images/ks-hasher/ks_hasher_4.png"
+        ],
+        "desc": "Find checksum of text, file, or even folder with ease. It uses its own algorithm to treat folder just like a file. All popular checksum algorithms are supported. It process data from start till end which means it will hint even if a single byte has been changed in a text/file/folder. Now you can verify your data integrity in a flexible and most secure way.",
+        "bgColor": "#FCDDDE",
+        "lineColor": "#ED1C24",
+        "price": "$9.99",
+        "direction": "left"
+      }
+    ];
+
+   document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("appsContainer");
+
+  appsData.forEach((app, appIndex) => {
+    // Dots HTML
+    const dotsHTML = app.imgs.map((_, i) => `<span class="dot" data-app="${appIndex}" data-img="${i}"></span>`).join("");
+
+    // App HTML
+    const appHTML = `
+      <div class="app-slide-inner" id="${app.name}" style="background:${app.bgColor}">
+        <div class="preview">
+          <button class="arrow left" data-app="${appIndex}" data-dir="prev">&#10094;</button>
+          <img id="preview-${appIndex}" src="${app.imgs[0]}" alt="${app.title} Preview">
+          <button class="arrow right" data-app="${appIndex}" data-dir="next">&#10095;</button>
+          <div class="dots" id="dots-${appIndex}">
+            ${dotsHTML}
+          </div>
+        </div>
+        <div class="details">
+          <div class="title-box">
+            <img src="${app.logo}" alt="${app.title} Logo" class="logo">
+            <div class="title-box1">
+              <h2 class="title">${app.title}</h2>
+              <span class="underline" style="background:${app.lineColor}"></span>
+            </div>
+          </div>
+          <div class="desc">${app.desc}</div>
+          <div class="actions">
+            <div>
+              <button class="btn">Add to Cart</button>
+              <button class="btn">Try for Free</button>
+            </div>
+            <div>
+              <button class="btn">Learn More →</button>
+            </div>
+          </div>
+          <p class="price">${app.price}</p>
+        </div>
+      </div>
+    `;
+    container.innerHTML += appHTML;
+  });
+
+  // Slider logic
+  let currentIndexes = appsData.map(() => 0);
+
+  function showImage(appIndex) {
+    const imgElement = document.getElementById(`preview-${appIndex}`);
+    imgElement.src = appsData[appIndex].imgs[currentIndexes[appIndex]];
+
+    // Update dots
+    const dots = document.querySelectorAll(`#dots-${appIndex} .dot`);
+    dots.forEach((dot, i) => dot.classList.toggle("active", i === currentIndexes[appIndex]));
+  }
+
+  function nextImage(appIndex) {
+    currentIndexes[appIndex] = (currentIndexes[appIndex] + 1) % appsData[appIndex].imgs.length;
+    showImage(appIndex);
+  }
+
+  function prevImage(appIndex) {
+    currentIndexes[appIndex] = (currentIndexes[appIndex] - 1 + appsData[appIndex].imgs.length) % appsData[appIndex].imgs.length;
+    showImage(appIndex);
+  }
+
+  function goToImage(appIndex, imgIndex) {
+    currentIndexes[appIndex] = imgIndex;
+    showImage(appIndex);
+  }
+
+  // Event delegation for arrows and dots
+  container.addEventListener("click", (e) => {
+    if (e.target.matches(".arrow")) {
+      const appIndex = +e.target.dataset.app;
+      if (e.target.dataset.dir === "next") nextImage(appIndex);
+      else prevImage(appIndex);
+    } else if (e.target.matches(".dot")) {
+      const appIndex = +e.target.dataset.app;
+      const imgIndex = +e.target.dataset.img;
+      goToImage(appIndex, imgIndex);
+    }
+  });
+
+  // Auto slide every 3 seconds
+  setInterval(() => appsData.forEach((_, i) => nextImage(i)), 3000);
+
+  // Init
+  appsData.forEach((_, i) => showImage(i));
+});
+  </script>
+
+
+
+
+
+  <script src="./JS/Navbar.js"></script>
+  <script src="./JS/AppSlide.js"></script>
+  <script src="./JS/Contract.js"></script>
+  <script src="./JS/Contact.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 830 830" style="enable-background:new 0 0 830 830;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#231F20;stroke:#2C2917;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#EF5EA1;stroke-width:30;stroke-miterlimit:10;}
+	.st2{filter:url(#AI_Shadow_2);}
+	.st3{fill:#EF5EA0;}
+	.st4{fill:#231F20;}
+	.st5{fill:#231F20;stroke:#231F20;stroke-width:3;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#231F20;stroke-width:3;stroke-miterlimit:10;}
+	.st7{fill:#010101;}
+	.st8{fill:#F15A29;}
+</style>
+<filter  width="140%" height="130%" y="-15%" x="-15%" filterUnits="objectBoundingBox" id="AI_Shadow_2">
+	<feGaussianBlur  in="SourceAlpha" stdDeviation="6" result="blur"></feGaussianBlur>
+	<feOffset  dy="8" dx="8" in="blur" result="offsetBlurredAlpha"></feOffset>
+	<feMerge>
+		<feMergeNode  in="offsetBlurredAlpha"></feMergeNode>
+		<feMergeNode  in="SourceGraphic"></feMergeNode>
+	</feMerge>
+</filter>
+<path id="XMLID_67_" class="st0" d="M815,415c0,220.9-179.1,400-400,400S15,635.9,15,415S194.1,15,415,15S815,194.1,815,415"/>
+<circle id="XMLID_66_" class="st1" cx="415" cy="415" r="400"/>
+<g id="XMLID_64_" class="st2">
+	<polygon id="XMLID_5_" class="st3" points="505.3,207.8 505.3,405.2 649.9,405.2 649.9,229.1 628.6,207.8 	"/>
+</g>
+<g id="XMLID_55_" class="st2">
+	<polygon id="XMLID_5_" class="st3" points="344.7,487.4 344.7,684.8 489.3,684.8 489.3,508.7 468,487.4 	"/>
+</g>
+<g id="XMLID_34_" class="st2">
+	<polygon id="XMLID_5_" class="st3" points="188,204.8 188,402.2 332.6,402.2 332.6,226.1 311.3,204.8 	"/>
+</g>
+<polygon id="XMLID_31_" class="st4" points="391.1,628.6 391.1,552.2 444.8,590.4 "/>
+<g id="drawing">
+	<polygon id="XMLID_52_" class="st5" points="216,333.2 238.8,286.4 256.5,316.8 263.9,296.7 283.9,333.2 	"/>
+	<circle id="XMLID_51_" class="st5" cx="291.9" cy="294.9" r="10.8"/>
+	<path id="XMLID_53_" class="st6" d="M308.2,348h-96.5c-3.9,0-7.1-3.2-7.1-7.1v-62.2c0-3.9,3.2-7.1,7.1-7.1h96.5
+		c3.9,0,7.1,3.2,7.1,7.1v62.2C315.3,344.8,312.1,348,308.2,348z"/>
+</g>
+<path id="XMLID_30_" class="st7" d="M556.2,282.4L556.2,282.4L556.2,282.4l-0.1,14.4l0,0v30.6c-2.4-0.5-5.2-0.5-8,0.3
+	c-7.4,2-12.2,8.1-10.7,13.6s8.7,8.4,16.1,6.5c6.5-1.7,10.9-6.6,11-11.5h0v-41.1l35-7.1v30.6c-2.4-0.5-5.2-0.5-8,0.3
+	c-7.4,2-12.2,8.1-10.7,13.6c1.5,5.5,8.7,8.4,16.1,6.5c6.5-1.7,10.9-6.6,11-11.5h0v-41.2v-12.7v-1.7L556.2,282.4z"/>
+<polygon id="XMLID_29_" class="st8" points="338.6,583.5 328,564.1 319.4,593.2 "/>
+<polygon id="XMLID_28_" class="st8" points="337.7,286.8 357.1,297.5 348.7,268.4 "/>
+<polygon id="XMLID_26_" class="st8" points="585.2,411 570.7,427.8 601,425.6 "/>
+<path id="XMLID_22_" class="st8" d="M592.1,425.3h-12c0.4,4.5,0.6,9.1,0.6,13.8c0,61-33.7,114.2-83.5,142v13.6
+	c56.6-28.9,95.5-87.8,95.5-155.7C592.7,434.4,592.5,429.8,592.1,425.3z"/>
+<path id="XMLID_13_" class="st8" d="M418,264.4c-23.6,0-46.1,4.7-66.6,13.2v13.1c20.3-9.2,42.9-14.3,66.6-14.3
+	c29.2,0,56.6,7.7,80.4,21.3V284C474.3,271.5,447,264.4,418,264.4z"/>
+<g id="XMLID_2_">
+	<path id="XMLID_6_" class="st8" d="M328,574.5c-43.8-29.2-72.7-79-72.7-135.4c0-10.7,1.1-21.2,3-31.3h-12.2
+		c-1.8,10.2-2.8,20.6-2.8,31.3c0,63.4,34,119.1,84.7,149.7V574.5z"/>
+	<path id="XMLID_3_" class="st8" d="M454.4,597.6v12.3c0.1,0,0.1,0,0.2,0v-12.3C454.5,597.6,454.4,597.6,454.4,597.6z"/>
+</g>
+</svg>
