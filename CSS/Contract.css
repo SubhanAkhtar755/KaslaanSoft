@@ -1,6 +1,3 @@
-
-
-
 /* ===== Contract Section (Wrapper) ===== */
 .contract-section {
   background: #f4f4f4;
@@ -13,12 +10,7 @@
   opacity: 0;
   transform: translateX(100px);
   transition: all 1s ease-in-out;
-scroll-margin-top: 80px; /* Navbar ka offset */
-}
-
-.contract-section.visible {
-  opacity: 1;
-  transform: translateX(0);
+  scroll-margin-top: 80px; /* Navbar ka offset */
 }
 
 .contract-section.visible {
@@ -36,14 +28,13 @@ scroll-margin-top: 80px; /* Navbar ka offset */
   gap: 2rem;
   width: 100%;
   max-width: 1400px;
-  
 }
 
 /* ===== Contract Box ===== */
 .contract-box {
   flex: 1 1 45%;
   max-width: 600px;
-  min-width: 300px;
+  min-width: 320px;
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -126,6 +117,7 @@ scroll-margin-top: 80px; /* Navbar ka offset */
 .contract-content li {
   margin-bottom: 0.5rem;
 }
+
 /* ===== Contract Footer ===== */
 .contract-footer {
   margin-top: 2rem;
@@ -137,5 +129,3 @@ scroll-margin-top: 80px; /* Navbar ka offset */
   position: relative;
   top: 1px;
 }
-
-

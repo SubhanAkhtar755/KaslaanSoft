@@ -1,14 +1,11 @@
-
 /* ======================Contact====================================== */
-
 
 .contact-section {
   width: 100%;
   padding: 2rem 1rem 7rem;
   position: relative;
   background: linear-gradient(to top right, #e0e0e0, #e7e7e7, #f6f6f6, #fafafa, #fdfdfd);
-    scroll-margin-top: 80px; /* Navbar ka offset */
-
+  scroll-margin-top: 80px; /* Navbar ka offset */
 }
 
 .contact-bg {
@@ -38,6 +35,7 @@
   max-width: 350px;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .contact-heading {
@@ -65,13 +63,17 @@
 
 .input-group input,
 .input-group select,
+.input-group textarea,
 textarea {
   flex: 1;
   border: none;
   outline: none;
-  padding: 0.5rem;
+  padding: 0.75rem;
   font-weight: 500;
   background: #b3eaff;
+  cursor: text;
+  position: relative;
+  z-index: 2; /* ✅ hamesha label ke upar rahe */
 }
 
 .select-group {
@@ -88,6 +90,8 @@ textarea {
   display: flex;
   justify-content: center;
   margin-top: 0.5rem;
+  width: 100%;
+  position: relative; /* important for mobile touch */
 }
 
 #file-btn {
@@ -95,15 +99,21 @@ textarea {
   color: #fff;
   padding: 0.5rem 1.5rem;
   border: none;
+  border-radius: 4px;
+  display: inline-block;
   cursor: pointer;
   transition: 0.3s;
+  text-align: center;
+  width: 100%;   /* make full width clickable */
+  z-index: 10;   /* ensure it’s above other elements */
 }
 
 #file-btn:hover {
   background: #0dbefe;
 }
 
-textarea {
+textarea,
+.contact-col textarea {
   display: block;
   width: 100%;
   height: 295px;
@@ -114,16 +124,21 @@ textarea {
   color: #000;
   resize: none;
   outline: none;
-  cursor: text; /* Cursor hammesha text wala */
+  cursor: text;
+  position: relative;
+  z-index: 1; /* click priority */
+  box-shadow: 2.5px 3px 5px rgba(0, 0, 0, 0.3);
 }
-#subject{
+
+#subject {
   background: #6bd6ff;
   font-size: 1rem;
   color: #000;
   padding: 1rem;
   outline: none;
-  cursor: text; /* Cursor hammesha text wala */
- font-weight: bold;}
+  cursor: text;
+  font-weight: bold;
+}
 
 #submit-btn {
   margin-top: 1.5rem;
@@ -141,40 +156,6 @@ textarea {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .contact-container {
-    flex-direction: column;
-    align-items: center;
-  }
-    textarea {
-    width: 100%;   /* full width */
-    height: 200px; /* chhoti screen par height thodi kam kar lo (optional) */
-  }
-}
-
-
-
-.contact-col {
-  flex: 1 1 300px;
-  max-width: 350px;
-  display: flex;
-  flex-direction: column;
-}
-
-textarea {
-  display: block;
-  width: 100%;
-  height: 295px;
-  padding: 1rem;
-  background: #b3eaff;
-  border-radius: 5px;
-  font-size: 1rem;
-  color: #000;
-  resize: none;
-  outline: none;
-  cursor: text;
-}
-
 /* 📱 Mobile fix */
 @media (max-width: 768px) {
   .contact-container {
@@ -184,78 +165,10 @@ textarea {
 
   .contact-col {
     max-width: 100%;   /* ✅ full width on mobile */
-    width: 100%;
   }
 
   textarea {
     width: 100%;   
     height: 200px;  /* optional: height thodi kam */
   }
-}
-
-.contact-col textarea {
-  position: relative;   /* ensure it's on top */
-  z-index: 1;           /* textarea click priority high */
-  width: 100%;
-  height: 295px;
-  padding: 1rem;
-  background: #b3eaff;
-  border-radius: 5px;
-  box-shadow: 2.5px 3px 5px rgba(0, 0, 0, 0.3);
-  font-size: 1rem;
-  color: #000;
-  resize: none;
-  outline: none;
-  cursor: text;
-}
-
-
-
-.input-group input,
-.input-group select,
-.input-group textarea,
-textarea {
-  flex: 1;
-  border: none;
-  outline: none;
-  padding: 0.75rem;
-  font-weight: 500;
-  background: #b3eaff;
-  cursor: text;
-  position: relative;
-  z-index: 2;   /* ✅ hamesha label ke upar rahe */
-}
-#file-btn {
-  background: #00adef;
-  color: #fff;
-  padding: 0.5rem 1.5rem;
-  border-radius: 4px;
-  display: inline-block;   /* ✅ label ko button ki tarah dikhane ke liye */
-  cursor: pointer;
-  transition: 0.3s;
-  text-align: center;
-}
-
-#file-btn:hover {
-  background: #0dbefe;
-}
-.file-btn {
-  display: flex;
-  justify-content: center;
-  margin-top: 0.5rem;
-  width: 100%;
-  position: relative; /* important for mobile touch */
-}
-
-#file-btn {
-  background: #00adef;
-  color: #fff;
-  padding: 0.5rem 1.5rem;
-  border-radius: 4px;
-  display: inline-block;
-  cursor: pointer;
-  transition: 0.3s;
-  text-align: center;
-  width: 100%;   /* make full width clickable */
-  z-index: 10;   /* ensure it’s above other elements */
 }

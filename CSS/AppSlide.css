@@ -1,306 +1,33 @@
-
-
-
-
-/* Inner container */
+/* ===== App Slide Inner ===== */
 .app-slide-inner {
   display: flex;
-  align-items: center;      /* vertical center */
+  align-items: center;
   justify-content: space-between;
   gap: 30px;
   padding: 20px;
   margin-bottom: 50px;
+  scroll-margin-top: 80px;
+  /* Navbar offset */
 }
 
-/* Preview (Left) */
-.preview {
-  flex: 1;
-  display: flex;              /* ✅ */
-  align-items: center;        /* ✅ vertically center */
-  justify-content: center;    /* ✅ horizontally center */
-}
-
-.preview img {
- 
-
-  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-  max-height: 400px;
-  object-fit: contain;         /* ✅ image ko crop na kare */
-}
-
-/* Details (Right) */
-.details {
-  flex: 1;
-}
-
-.title-box {
-    position: relative; /* ✅ underline ke liye reference */
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.logo {
-  height: 60px;
-  filter: drop-shadow(0px 0px 5px rgba(0,0,0,.5));
-}
-
-.title {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.title-box1 {
-    position: relative; /* ✅ underline ke liye reference */
-    width: 100%;
-}
-.underline {
-  position: absolute;
-  bottom: -5px;         /* text ke thoda neeche */
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: #12f7ff;
-}
-
-/* Description */
-.desc {
-  line-height: 1.5;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  padding: 20px;
-}
-
-.btn {
-  background: #00ADEF;
-  border: none;
-  padding: 10px 20px;
-  color: #ffffff;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-  border: 2px solid #078EBE;
-}
-
-.btn:hover {
-  background: #10BDFF;
-}
-
-/* Price */
-.price {
-  color: #ae0d0d;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.actions {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .app-slide-inner {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .preview {
-    margin-bottom: 20px;
-  }
-
-  .actions {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-
-
-
-
-/* Responsive */
-@media (max-width: 768px) {
-  .app-slide-inner {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .preview {
-    margin-bottom: 20px;
-  }
-
-  .actions {
-    display: flex;
-    flex-direction: column;     /* ✅ buttons neeche neeche */
-    justify-content: center;
-    align-items: center;
-    gap: 12px;                  /* ✅ sab buttons ke darmiyan same gap */
-    width: 100%;
-  }
-
-  .actions .btn {
-    width: 100%;                /* ✅ sab equal width */
-    max-width: 250px;           /* optional limit rakhi */
-    text-align: center;
-  }
-}
-
-
-
-.preview {
+.version-lbl {
+  color: white;
+  font-size: .9rem;
+  background: #f30000;
+  padding: 2px 10px;
+  border-radius: 10px;
   position: relative;
-
-}
-.preview .arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: #fff;
-  border: none;
-  font-size: 20px;
-  padding: 5px 10px;
-  cursor: pointer;
-  border-radius: 50%;
+  top: -3px
 }
 
-.preview .arrow.left {
-  left: -5px;
-}
-
-.preview .arrow.right {
-  right: -5px;
-}
-
-
-
+/* ===== Preview (Left) ===== */
 .preview {
   flex: 1;
   display: flex;
-  flex-direction: column;   /* ✅ image upar, dots neeche */
+  flex-direction: column;
+  /* image upar, dots neeche */
   align-items: center;
-  position: relative;
-}
-
-.preview img {
-  max-width: 100%;
-}
-
-/* arrows ko center vertically rakho */
-.preview .arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.4);
-  color: #fff;
-  border: none;
-  padding: 8px;
-  cursor: pointer;
-  border-radius: 50%;
-  font-size: 18px;
-}
-.preview .arrow.left {
-  left: 10px;
-}
-.preview .arrow.right {
-  right: 10px;
-}
-
-/* ✅ dots image ke neeche */
-.dots {
-  margin-top: 10px;       /* thoda gap image se */
-  display: flex;
   justify-content: center;
-  gap: 6px;
-}
-
-.dots span {
-  height: 10px;
-  width: 10px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-}
-.dots span.active {
-  background-color: #333; /* active dot color */
-}
-
-.app-slide-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  padding: 20px;
-}
-
-/* Responsive (Mobile < 768px) */
-@media (max-width: 768px) {
-  .actions {
-    display: flex;
-    flex-direction: column;     /* ✅ sab neeche neeche */
-    justify-content: center;
-    align-items: center;
-    gap: 2px;                   /* ✅ 2px ka gap sab ke darmiyan */
-    width: 100%;
-  }
-
-  .actions > div {
-    width: 100%;                /* ✅ har inner div full width */
-    display: flex;
-    flex-direction: column;     /* ✅ andar ke buttons bhi neeche neeche */
-    gap: 2px;
-    align-items: center;        /* ✅ andar ke buttons bhi center ho jayein */
-  }
-
-  .actions .btn {
-    width: 100%;                /* ✅ sab equal width */
-    max-width: 250px;           /* ✅ optional */
-    margin: 0 auto;             /* ✅ hamesha center */
-    text-align: center;
-  }
-}
-
-/* dots ==================================== */
-.dots {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
-  background: #bbb;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.dot.active {
-  background: #333 !important;
-}
-.app-slide-inner {
-  scroll-margin-top: 80px; /* Navbar ka offset */
-}
-
-.dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
-  background: #bbb;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.dot.active {
-  background: #333 !important;
-}
-.preview {
   position: relative;
   text-align: center;
 }
@@ -310,37 +37,252 @@
   height: auto;
   display: block;
   margin: 0 auto;
+  max-height: 400px;
+  object-fit: contain;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
+/* ===== Arrows ===== */
 .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   color: #fff;
   border: none;
   padding: 0.5rem 0.75rem;
   cursor: pointer;
   font-size: 1.5rem;
+  border-radius: 50%;
   z-index: 2;
 }
-.arrow.left { left: 10px; }
-.arrow.right { right: 10px; }
 
-.dots {
-  text-align: center;
-  margin-top: 0.5rem;
+.arrow.left {
+  left: 10px;
 }
+
+.arrow.right {
+  right: 10px;
+}
+
+/* ===== Dots ===== */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.dots span,
 .dot {
-  height: 12px;
   width: 12px;
-  margin: 0 3px;
-  background-color: #bbb;
+  height: 12px;
+  background: #bbb;
   border-radius: 50%;
   display: inline-block;
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
+.dots span.active,
 .dot.active {
-  background-color: #333; /* ✅ active dot color */
+  background: #333 !important;
+}
+
+/* ===== Details (Right) ===== */
+.details {
+  flex: 1;
+}
+
+.title-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.title-box1 {
+  position: relative;
+  width: 100%;
+}
+
+.logo {
+  height: 60px;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .5));
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.underline {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #12f7ff;
+}
+
+/* ===== Description ===== */
+.desc {
+  line-height: 1.5;
+  margin: 10px 0 20px 0;
+  padding: 20px;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  background: #00ADEF;
+  border: 2px solid #078EBE;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: calibri;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background: #10BDFF;
+}
+
+/* ===== Price ===== */
+.price {
+  color: #ae0d0d;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* ===== Actions ===== */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .app-slide-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .preview {
+    margin-bottom: 20px;
+  }
+
+  .actions {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .actions>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+  }
+
+  .actions .btn {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.price .old-price {
+  text-decoration: line-through;
+  /* 👈 cutting line */
+  color: #ae0d0d;
+  font-size: 0.9rem;
+  /* 👈 thoda chhota */
+  margin-right: 4px;
+}
+
+.price .new-price {
+  color: #ae0d0d;
+  /* 👈 red highlight */
+  font-size: 1.2rem;
+  /* 👈 thoda bada */
+  font-weight: bold;
+}
+/* container relative hona chahiye */
+.app-slide-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px;
+  margin-bottom: 50px;
+  scroll-margin-top: 80px;
+}
+/* ✅ Badge box with image */
+.badge {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  width: 85px;
+  height: 85px;
+  z-index: 20;
+  text-align: center;
+}
+
+.badge img {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* ✅ Left-bottom dark shadow, no top shadow */
+  filter: drop-shadow(-3px 5px 4px rgba(0, 0, 0, 0.7));
+}
+
+/* ✅ Upar ka text */
+.badge-text {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* ✅ Neeche discount % */
+.badge-discount {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+/* 📱 Mobile view me size aur text chhota karo */
+@media (max-width: 768px) {
+  .badge {
+    width: 60px;    /* size chhota kiya */
+    height: 60px;
+    opacity: 0.7;   /* transparency same */
+  }
+
+  .badge-text {
+    font-size: 9px;    /* text size thoda aur chhota */
+    top: 18px;         /* thoda adjust kiya position */
+  }
+
+  .badge-discount {
+    font-size: 8px;    /* text size thoda aur chhota */
+    bottom: 10px;      /* thoda adjust kiya position */
+  }
 }
