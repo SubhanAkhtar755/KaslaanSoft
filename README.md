@@ -1,3 +1,2 @@
 #
-
-https://kaslaansoft-html-css-js.netlify.app
+https://kaslaansoft.netlify.app/
